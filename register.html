@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب - 7booba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><span class="brand-logo"><i class="fa-solid fa-utensils"></i></span><span class="brand-text"><strong>7booba</strong></span></a>
+        </nav>
+    </header>
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1 style="text-align:center; margin-bottom:20px;">إنشاء حساب</h1>
+            <form class="form" id="registerForm">
+                <div class="form-group"><label>الاسم الكامل</label><input type="text" name="full_name" required></div>
+                <div class="form-group"><label>البريد الإلكتروني</label><input type="email" name="email" required></div>
+                <div class="form-group"><label>كلمة المرور</label><input type="password" name="password" required></div>
+                <div class="form-group"><label>تأكيد كلمة المرور</label><input type="password" name="confirm_password" required></div>
+                <button type="submit" class="btn btn-primary btn-block">تسجيل</button>
+            </form>
+        </div>
+    </section>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

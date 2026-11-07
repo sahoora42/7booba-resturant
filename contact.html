@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - 7booba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .page-header { background: linear-gradient(135deg, rgba(62,39,35,.9), rgba(93,64,55,.85)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80') center/cover; color: var(--cream); padding-block: 80px; text-align: center; }
+        .page-title { color: var(--gold-light); font-size: 2.5rem; margin-bottom: 10px; }
+        .contact-info { background: var(--brown); color: var(--cream); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow-md); }
+        .contact-info h3 { color: var(--gold-light); margin-bottom: 25px; font-size: 1.5rem;}
+        .info-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; }
+        .info-item i { color: var(--gold); font-size: 1.2rem; margin-top: 5px; }
+        .contact-form-wrap { background: var(--white); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow-md); }
+        .contact-form-wrap h3 { margin-bottom: 25px; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><span class="brand-logo"><i class="fa-solid fa-utensils"></i></span><span class="brand-text"><strong>7booba</strong></span></a>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="menu.html">القائمة</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                <li data-nav-auth></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="flashSlot"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">اتصل بنا</h1>
+            <p>نحن هنا لخدمتك — تواصل معنا في أي وقت</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-grid">
+            
+            <!-- معلومات التواصل -->
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4 style="color:var(--white); margin-bottom: 5px;">الموقع</h4>
+                        <p>ود مدني، حي المنيرة، السودان</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4 style="color:var(--white); margin-bottom: 5px;">الهاتف</h4>
+                        <p>+249-XX-XXX-XXXX</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4 style="color:var(--white); margin-bottom: 5px;">واتساب</h4>
+                        <p><a href="https://wa.me/249XXXXXXXXX" target="_blank" style="color:var(--gold-light);">تواصل عبر واتساب</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4 style="color:var(--white); margin-bottom: 5px;">البريد الإلكتروني</h4>
+                        <p>info@7booba.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4 style="color:var(--white); margin-bottom: 5px;">ساعات العمل</h4>
+                        <p>يومياً: 9 صباحاً — 11 مساءً</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الفورم -->
+            <div class="contact-form-wrap">
+                <h3>أرسل لنا رسالة</h3>
+                <form class="form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>الاسم الكامل</label>
+                            <input type="text" name="name" required placeholder="أدخل اسمك">
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" name="email" required placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>رقم الهاتف</label>
+                            <input type="tel" name="phone" required placeholder="+249 ...">
+                        </div>
+                        <div class="form-group">
+                            <label>الموضوع</label>
+                            <input type="text" name="subject" required placeholder="موضوع الرسالة">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>الرسالة</label>
+                        <textarea name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><h3 class="footer-brand">7booba</h3><p>مطعم سوداني تقليدي يقدّم أشهى الأطباق السودانية الأصيلة.</p></div>
+            <div class="footer-col"><h4>روابط سريعة</h4><ul class="footer-links"><li><a href="menu.html">القائمة</a></li><li><a href="about.html">من نحن</a></li></ul></div>
+            <div class="footer-col"><h4>تواصل معنا</h4><ul class="footer-contact"><li><i class="fa-solid fa-location-dot"></i> ود مدني، حي المنيرة</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 7booba. جميع الحقوق محفوظة.</p></div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

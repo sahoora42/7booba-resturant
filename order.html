@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب الآن - 7booba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><span class="brand-logo"><i class="fa-solid fa-utensils"></i></span><span class="brand-text"><strong>7booba</strong></span></a>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li><li><a href="menu.html">القائمة</a></li>
+                <li data-nav-auth></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="flashSlot"></div>
+
+    <section class="section">
+        <div class="container order-container">
+            <div class="order-form-wrap">
+                <h2>بيانات الطلب</h2>
+                <form class="form" id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group"><label>الاسم</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>رقم الهاتف</label><input type="tel" name="phone" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label>الطبق</label><select id="food_name" required></select></div>
+                        <div class="form-group"><label>الكمية</label><input type="number" id="quantity" value="1" min="1" max="50"></div>
+                    </div>
+                    <div class="form-group"><label>العنوان</label><input type="text" name="address" required></div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">تأكيد الطلب</button>
+                </form>
+            </div>
+            <div class="order-summary">
+                <h3>ملخص الطلب</h3>
+                <div style="display:flex; justify-content:space-between; color: white; margin-bottom:10px;"><span>الطبق:</span><span id="sumFood">—</span></div>
+                <div style="display:flex; justify-content:space-between; color: white; margin-bottom:10px;"><span>الكمية:</span><span id="sumQty">1</span></div>
+                <div style="display:flex; justify-content:space-between; color: var(--gold);"><span>الإجمالي:</span><span id="sumTotal">—</span></div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

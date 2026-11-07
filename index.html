@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7booba — مطعم سوداني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><span class="brand-logo"><i class="fa-solid fa-utensils"></i></span><span class="brand-text"><strong>7booba</strong></span></a>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">الرئيسية</a></li><li><a href="menu.html">القائمة</a></li>
+                <li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li>
+                <li data-nav-auth></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="flashSlot"></div>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">أهلاً بك في <span class="highlight">7booba</span></h1>
+            <p class="hero-subtitle">مطعم سوداني تقليدي في قلب ود مدني — نقدّم لك أشهى الأطباق بنكهة البيت.</p>
+            <div class="hero-actions">
+                <a href="menu.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-utensils"></i> تصفّح القائمة</a>
+                <a href="order.html" class="btn btn-ghost btn-lg"><i class="fa-solid fa-bag-shopping"></i> اطلب الآن</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>+15</strong><span>طبق سوداني</span></div>
+                <div class="stat"><strong>100%</strong><span>مكوّنات طازجة</span></div>
+                <div class="stat"><strong>+500</strong><span>عميل سعيد</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head"><span class="section-tag">أطباقنا المميزة</span><h2 class="section-title">أشهر الأطباق</h2></div>
+            <div class="cards-grid" id="featuredGrid"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><h3 class="footer-brand">7booba</h3><p>مطعم سوداني تقليدي يقدّم أشهى الأطباق السودانية الأصيلة.</p></div>
+            <div class="footer-col"><h4>روابط سريعة</h4><ul class="footer-links"><li><a href="menu.html">القائمة</a></li><li><a href="about.html">من نحن</a></li></ul></div>
+            <div class="footer-col"><h4>تواصل معنا</h4><ul class="footer-contact"><li><i class="fa-solid fa-location-dot"></i> ود مدني، حي المنيرة</li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 7booba. جميع الحقوق محفوظة.</p></div>
+    </footer>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
